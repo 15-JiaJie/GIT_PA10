@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5140303659050033032}
   - component: {fileID: 4891259565999384457}
+  - component: {fileID: 2133506427966996221}
   m_Layer: 0
   m_Name: ObstacleManager
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,3 +47,16 @@ MonoBehaviour:
   Obstacle: {fileID: 1662584973375887002, guid: ed5b6e139639a11419909b026eb40da8,
     type: 3}
   SpawnInterval: 1
+--- !u!65 &2133506427966996221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367494817254691767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

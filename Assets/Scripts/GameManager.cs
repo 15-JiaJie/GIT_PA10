@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager thisManager = null;  
     [SerializeField] private Text Txt_Score = null;
     [SerializeField] private Text Txt_Message = null;
-    private int Score = 0;
+    public static int Score = 0;
+    
 
     void Start()
     {
@@ -18,13 +19,15 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        UpdateScore(0);
+
         if (Time.timeScale == 0 && Input.GetKeyDown(KeyCode.Return))
             StartGame();
     }
 
-    public void UpdateScore(int value)
+    public void UpdateScore(int Value)
     {
-        Score += value;
+        Score += Value;
         Txt_Score.text = "SCORE : " + Score;
     }
 
